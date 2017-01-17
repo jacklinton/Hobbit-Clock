@@ -1,5 +1,5 @@
 body {
-	
+	background-image: none;
 }
 
 .secondHand {
@@ -79,4 +79,5 @@ body {
 	color: lightgreen;
 	background-color: darkgreen;
 	position: relative;
+	padding-right: 20px;
 }
