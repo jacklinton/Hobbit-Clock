@@ -24,6 +24,7 @@ window.setInterval(function(){
 	if (nowMinutes === 60) {
 		nowHours += 1
 		nowMinutes = 0
+		displayGreeting ()
 	}
 	if (nowHours === 24) {
 		nowHours = 0
@@ -77,27 +78,27 @@ function moveTheHands() {
 }
 
 function displayGreeting() {
-	if (nowHours === 7||8) {
+	if (nowHours === 7||nowHours === 8) {
 		document.getElementById("greeting").innerHTML = "<h1>Breakfast!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');") 
 	}
-	else if (nowHours === 9||10) {
+	else if (nowHours === 9||nowHours === 10) {
 		document.getElementById("greeting").innerHTML = "<h1>Second Breakfast!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');")
 	}
-	else if (nowHours === 11||12) {
+	else if (nowHours === 11||nowHours === 12) {
 		document.getElementById("greeting").innerHTML = "<h1>Elevenses!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');")
 	}
-	else if (nowHours === 13||14||15) {
+	else if (nowHours === 13||nowHours === 14||nowHours === 15) {
 		document.getElementById("greeting").innerHTML = "<h1>Luncheon!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');")
 	}
-	else if (nowHours === 16||17) {
+	else if (nowHours === 16|| nowHours === 17) {
 		document.getElementById("greeting").innerHTML = "<h1>Afternoon Tea!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');")
 	}
-	else if (nowHours === 18||19) {
+	else if (nowHours === 18||nowHours === 19) {
 		document.getElementById("greeting").innerHTML = "<h1>Dinner!</h1>"
 		document.getElementById("mainBody").setAttribute("style", "background-image: url('" + getRandomInt(1,9) +".jpg');")
 	}
