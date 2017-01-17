@@ -3,7 +3,7 @@
 	height: 200px;
 	width: 1px;
 	transform-origin: top;
-	background-color: black;
+	background-color: magenta;
 	top: 50%;
 	left: 50%;
 	position: fixed;
@@ -14,7 +14,7 @@
 	height: 150px;
 	width: 2px;
 	transform-origin: top;
-	background-color: black;
+	background-color: magenta;
 	top: 50%;
 	left: 50%;
 	position: fixed;
@@ -26,7 +26,7 @@
 	height: 120px;
 	width: 4px;
 	transform-origin: top;
-	background-color: black;
+	background-color: magenta;
 	top: 50%;
 	left: 50%;
 	position: fixed;
@@ -39,6 +39,9 @@
 	float: top;
 	text-align: center;
 	position: fixed;
+	clear: both;
+	margin-top: 100px;
+	background-color: lightyellow;
 }
 
 .clockCircle {
@@ -51,4 +54,25 @@
 	border-color: black;
 	border-style: solid;
 	border-width: 2px;
+}
+
+.title{
+	display: block;
+	width: 100%;
+	float: top;
+	text-align: center;
+	position: fixed;
+	color: lightgreen;
+	background-color: darkgreen;
+
+}
+
+.greeting{
+	display: block;
+	width: 100%;
+	float: bottom;
+	text-align: center;
+	color: lightgreen;
+	background-color: darkgreen;
+
 }

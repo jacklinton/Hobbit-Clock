@@ -66,3 +66,43 @@ function moveTheHands() {
 		mha += 1
 	}, 10000)
 }
+
+function displayGreeting() {
+	if (nowHours === 7) {
+		document.getElementById("greeting").innerHTML = "<h1>Breakfast!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;") 
+	}
+	else if (nowHours === 9) {
+		document.getElementById("greeting").innerHTML = "<h1>Second Breakfast!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	}
+	else if (nowHours === 11) {
+		document.getElementById("greeting").innerHTML = "<h1>Elevenses!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	}
+	else if (nowHours === 13) {
+		document.getElementById("greeting").innerHTML = "<h1>Luncheon!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	}
+	else if (nowHours === 16) {
+		document.getElementById("greeting").innerHTML = "<h1>Afternoon Tea!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	}
+	else if (nowHours === 18) {
+		document.getElementById("greeting").innerHTML = "<h1>Dinner!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	}
+	else if (nowHours === 20 && nowHours < 21) {
+		document.getElementById("greeting").innerHTML = "<h1>Supper!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = " + getRandomInt(1,9) +".jpg;")
+	} 
+	else {
+		document.getElementById("greeting").innerHTML = "<h1>Sleep!</h1>"
+		document.getElementById("mainBody")addAttribute("style", "background-image = sleep.jpg;")
+	}
+	function getRandomInt(min, max) {
+  		min = Math.ceil(min);
+  		max = Math.floor(max);
+  		return Math.floor(Math.random() * (max - min)) + min;
+	}
+}
