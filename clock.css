@@ -78,7 +78,7 @@ body {
 	bottom: 0%;
 	color: lightgreen;
 	background-color: darkgreen;
-	position: relative;
+	position: absolute;
 	padding-right: 20px;
-	float:bottom;
+	float: bottom;
 }
