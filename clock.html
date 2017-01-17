@@ -5,8 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="clock.css">
 	<title>Hobbit Clock</title>
 </head>
-<body onload="moveTheHands()">
+<body onload="moveTheHands()" id="mainBody">
 	<h1 id="title" class="title">The Hobbit Meal Times Clock</h1>
+	
 	<div id="displayTime" class="displayTime"></div>
 	<div class = ""></div>
 	<div id="secondHand" class="secondHand">
@@ -16,6 +17,6 @@
 	<div id="hourHand" class="hourHand">
 	</div>
 	<div id="greeting" class="greeting"></div>
-	<script type="text/javascript" src="clock.js"></script>
+	<script onload="displayGreeting()" type="text/javascript" src="clock.js"></script>
 </body>
 </html>

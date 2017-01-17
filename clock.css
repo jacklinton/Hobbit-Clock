@@ -1,3 +1,7 @@
+body {
+	
+}
+
 .secondHand {
 	display: block;
 	height: 200px;
@@ -40,7 +44,7 @@
 	text-align: center;
 	position: fixed;
 	clear: both;
-	margin-top: 100px;
+	margin-top: 60px;
 	background-color: lightyellow;
 }
 
@@ -68,11 +72,11 @@
 }
 
 .greeting{
-	display: block;
+	display: inline-block;
 	width: 100%;
-	float: bottom;
 	text-align: center;
+	bottom: 0%;
 	color: lightgreen;
 	background-color: darkgreen;
-
+	position: relative;
 }
